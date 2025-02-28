@@ -235,6 +235,17 @@ endpoints:
       dropParams: ["stop"]
       modelDisplayLabel: "OpenRouter"
 
+    # Deepseek AI Example
+    - name: "Deepseek"
+      apiKey: "${DEEPSEEK_API_KEY}"
+      baseURL: "https://api.deepseek.com/v1"
+      models:
+        default: ["deepseek-chat", "deepseek-coder", "deepseek-reasoner"]
+      fetch: false
+      titleConvo: true
+      titleModel: "deepseek-chat"
+      modelDisplayLabel: "Deepseek"
+
     # Portkey AI Example
     - name: "Portkey"
       apiKey: "dummy"
